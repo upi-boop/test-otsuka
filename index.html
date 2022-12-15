@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Test
+</body>
+<script>
+
+    //bagian 1 no 1
+    let array1 = [1,2,3]
+    let array2 = ['x','y','z']
+    let result = array1.concat(array2)
+    console.log(result)
+
+    //bagian 1 no 2
+    function displayPyramid(n) { 
+      for (let i = 0; i < n; i++) { 
+        let str = ''; 
+        for (let j = 1; j < n-i; j++) { 
+          str = str + ' '; 
+        } 
+        for (let k = 1; k <= (2*i+1); k++) { 
+          str = str + '*'; 
+        } 
+        console.log(str); 
+      } 
+    } 
+
+    // console.log(displayPyramid(5))
+   
+    //bagian 1 no 3
+    // const customer = {
+    //     code : "2000000091",
+    //     name : ""
+    // }
+
+
+    //Bagian 3 no 1
+    let message = `tonasi order sesuai `
+    let MOQ = 22;
+
+    if (MOQ < 21 || MOQ > 24 ){
+
+        let DetailMessage = `Order Harus dengan range 21-24`;
+        message = `Order Tidak Sesuai ${DetailMessage}`
+
+    }else if(MOQ < 42 || MOQ > 48){
+
+        let DetailMessage = `Order Harus dengan range 42-48`;
+        message = `Order Tidak Sesuai ${DetailMessage}`
+
+    }
+
+    let Point = `Tonase Input ${MOQ}`
+    // console.log(message, Point)
+
+    //bagian 3 no 2
+    let quality = 23;
+    let karton = '';
+    if(quality != 24){
+        karton = `tidak bulat dalam karton Rekomended up to 24 or multiple`
+    }
+
+    const Product = {
+        name : 'Pocary Sweet',
+        jumlah : quality,
+        karton : karton,
+        totalHarga : quality * 5000,
+    }
+
+    // console.log(Product)
+
+    //bagian 3 no 3
+
+
+</script>
+</html>
